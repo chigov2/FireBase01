@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "673290926019",
+    "firebase_url": "https://chigov-test-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "chigov-test",
+    "storage_bucket": "chigov-test.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:673290926019:android:efb854734dfe21e2496f76",
+        "android_client_info": {
+          "package_name": "techmarket.uno.firebase01"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "673290926019-of5q91e13np5qfkipqpbdljm6cjkkmdt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBK0ZJ7i1Uv-x-sRQ_FA0dH_mLb2DfzNw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "673290926019-of5q91e13np5qfkipqpbdljm6cjkkmdt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
