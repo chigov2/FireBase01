@@ -3,8 +3,10 @@ package techmarket.uno.firebase01;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 import com.google.firebase.database.DatabaseReference;
@@ -29,7 +31,17 @@ public class MainActivity extends AppCompatActivity {
         String sec_name = etLastName.getText().toString();
         String email = etEmail.getText().toString();
         newUser = new User(id,name,sec_name,email);
-        databaseReference.push().setValue(newUser);
+
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(sec_name) && !TextUtils.isEmpty(email))
+        {
+            databaseReference.push().setValue(newUser);
+            Toast.makeText(this,"Info added successfully",Toast.LENGTH_SHORT).show();
+        }
+        else
+        {
+            Toast.makeText(this,"Empty field",Toast.LENGTH_SHORT).show();
+        }
+
     }
 
     public void onClickRead(View view) {
